@@ -64,22 +64,22 @@
 			<span class="headerTitle">Editar usuário</span>
 			<button class="closeEditBtn pull-right" @click="showEditModal = false">&times;</button>
 		</div>
-		
+		<p><span class="error">* Campos obrigatórios </span></p>
 		<div class="modalBody">
 			<div class="form-group">
-				<label>Nome:</label>
+				<label>Nome:</label><span class="error">*</span>
 				<input type="text" class="form-control" v-model="clickRegistration.firstname">
 			</div>
 			<div class="form-group">
-				<label>Sobrenome:</label>
+				<label>Sobrenome:</label><span class="error">*</span>
 				<input type="text" class="form-control" v-model="clickRegistration.lastname">
 			</div>
 			<div class="form-group">
-				<label>E-mail:</label>
+				<label>E-mail:</label><span class="error">*</span>
 				<input type="text" class="form-control" v-model="clickRegistration.email">
 			</div>
 			<div class="form-group">
-				<label>Endereço:</label>
+				<label>Endereço:</label><span class="error">*</span>
 				<input type="text" class="form-control" v-model="clickRegistration.address">
 			</div>
 
