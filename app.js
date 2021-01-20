@@ -34,6 +34,7 @@ var app = new Vue({
 				.then(function(response){
 					if(app.newRegistration.firstname && app.newRegistration.lastname && app.newRegistration.email && app.newRegistration.address){
 						app.newRegistration = { firstname: '', lastname: '', email: '', address: '', optional: '', notes: '' };
+						showAddModal = false;
 					}
 					if(response.data.error){ // UNDEFINED
 						app.errorMessage = response.data.message;

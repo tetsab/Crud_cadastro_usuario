@@ -47,7 +47,7 @@
 									</span> Fechar 
 				</button> 
 				<button class="btn btn-primary" 
-								@click="showAddModal = false; saveRegistration();">
+								@click="saveRegistration();">
 								<span 
 									class="glyphicon glyphicon-floppy-disk">
 								</span>Salvar			
